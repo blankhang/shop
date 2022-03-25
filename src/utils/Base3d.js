@@ -93,6 +93,7 @@ class Base3d {
                 // 切换模型时删除旧的模型
                 this.model && this.model.removeFromParent();
                 this.model = gltf.scene.children[0];
+                //TODO 此网站下载的模型用不了? https://sketchfab.com/3d-models/dcb3a7d5b1ad4f948aa4945d6e378c8a
                 if ('bag2.glb' === modelName && !this.panzi) {
                     this.panzi = gltf.scene.children[5];
                     // 添加包包下面的盘子
