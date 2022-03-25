@@ -104,7 +104,7 @@ class Base3d {
                     this.mixer = new THREE.AnimationMixer(gltf.scene.children[1]);
                     this.animateAction = this.mixer.clipAction(gltf.animations[0]);
                     // 设置动画播放时长
-                    this.animateAction.setDuration(20).setLoop(THREE.LoopOnce);
+                    this.animateAction.setDuration(20).setLoop(THREE.LoopOnce,1);
                     // 设置播放完成之后停止
                     this.animateAction.clampWhenFinished = true;
                     // 播放动画
